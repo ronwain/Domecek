@@ -99,17 +99,17 @@ closeBtn.onclick = function() {
 
 closeBtn.onclick = function() {
     modal.style.display = "none";
-    localStorage.setItem('modalPravidla', true);
+    sessionStorage.setItem('modalPravidla', true);
 }
 
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
-        localStorage.setItem('modalPravidla', true);
+        sessionStorage.setItem('modalPravidla', true);
     }
 }
 
 
-if(localStorage.getItem('modalPravidla')) {
+if(sessionStorage.getItem('modalPravidla')) {
    modal.classList.add('hide');
 }
