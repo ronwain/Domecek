@@ -149,7 +149,11 @@ a {
 
 #gohome {
   display: none;
+  color: #000;
 
+}
+#gohome p {
+  color: #000;
 }
 
 /*home*/
@@ -260,6 +264,7 @@ h2, p {
   background-position: center;
   z-index: 1001;
   background-image: url(img/hvezda.svg);
+  margin: 4%;
 }
 
 .modal-img {
@@ -268,6 +273,7 @@ h2, p {
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1001;
+  margin:4%;
 }
 
 /* selector img-kocka a background je domecek? nedává smysl */
@@ -279,7 +285,6 @@ h2, p {
 .star--place {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-around;
   height: calc(100%/8);
   
@@ -297,6 +302,46 @@ h2, p {
 }
 
 
+.hide {
+  display: none !important;
+}
+
+/* Dostylovat podle toho jak budeš potřebovat */
+
+.modal--rules {
+  display: block;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal--rules .modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal--rules .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal--rules .close:hover,
+.modal--rules .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 /* (A) WRONG ORIENTATION - SHOW MESSAGE HIDE CONTENT */
 @media only screen and (orientation:portrait) {
@@ -343,6 +388,40 @@ h2, p {
     
   }
    }
+
+   @media  (max-height: 650px)
+ {
+  h2, p {
+ font-size: 16px;
+ color: #58ea00;
+  }
+  .button--style{
+    font-size: 10px;
+  }
+
+  .modal-star, .popisek--star {
+    width: 32px;
+    height: 32px;
+  }
+
+  .home--star{
+    width: 20vw;
+  }
+
+  .star--place {
+    flex-direction: row;
+    width: 100%;
+  }
+  .place--img {
+    flex: 1;
+    
+  }
+  .place--text {
+    flex: 2;
+    
+  }
+   }
+
   @media (min-width: 576px) and (max-width: 768px)
  {
     h2, p  {
@@ -465,7 +544,7 @@ h2, p {
         }
         .modal-content {
 
-          margin-top: 10%;
+          margin-top: 5%;
       }
         }
 
@@ -489,7 +568,7 @@ h2, p {
 
         .modal-content {
 
-          margin-top: 10%;
+          margin-top: 5%;
       }
       .modal-img {
         width: 200px;
@@ -516,7 +595,7 @@ h2, p {
           margin-bottom: 3%;
         }
         .modal-content {
-          margin-top: 15%;
+          margin-top: 5%;
       }
 
       .modal-img {
@@ -559,7 +638,7 @@ h2, p {
   --color3: white;
   --color4: lime;
   --color5: gold;
-  --color6: mediumseagreen;
+  --color6: rgb(9, 240, 71);
   --y: -30vmin;
   --x: -50%;
   --initialY: 60vmin;
@@ -571,6 +650,7 @@ h2, p {
   transform: translate(-50%, var(--y));
   width: var(--initialSize);
   aspect-ratio: 1;
+  z-index: 5000;
   background: 
     /*
     radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 0% 0%,
@@ -689,7 +769,22 @@ h2, p {
   font-size: 500%;
   background-color:#020811a1;
   z-index: 50000;
-  position: relative;
+  position: absolute;
   height:100%;
   width: 100%;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  
+  
 }
