@@ -1,9 +1,4 @@
 
-let storage = ["koupelna", "kuchyne", "obyvak"];
-
-storage.map((item) => {
-  console.log(item);
-});
 
 
 if(sessionStorage.getItem("obyvak") === null){   
@@ -63,7 +58,6 @@ if(sessionStorage.getItem("koupelna") === null){
 }
 
 
-/*
 if (sessionStorage.getItem("dilna") && sessionStorage.getItem("puda") && sessionStorage.getItem("loznice") && sessionStorage.getItem("obyvak") && sessionStorage.getItem("okoli") && sessionStorage.getItem("pokoj") && sessionStorage.getItem("kuchyne")  && sessionStorage.getItem("koupelna")) {
     console.log("prasarna");
     var modalHintLoz = document.getElementById('obyvak-hint-modal');
@@ -75,19 +69,7 @@ if (sessionStorage.getItem("dilna") && sessionStorage.getItem("puda") && session
 } else {
     console.log("nope")
 }
-*/
 
-if (sessionStorage.getItem("dilna") ) {
-   console.log("prasarna");
-   var modalHintLoz = document.getElementById('obyvak-hint-modal');
-   var firework = document.getElementById('fire');
-   modalHintLoz.style.display = "block";
-   firework.style.display = "block";
-
-
-} else {
-   console.log("nope")
-}
 
 // Rules modal
 var modal = document.getElementById('rulesModal');
