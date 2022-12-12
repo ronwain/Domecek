@@ -142,6 +142,31 @@ a {
 }
   
 
+
+/* Keyframes */
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
 .cliks {
   z-index: 10001;
   color: red;
@@ -214,6 +239,9 @@ h2, p {
 
 
 /*modaly*/
+.nofill {
+  background-color: rgba(0, 0, 0, 0);
+}
 
 .modal-content {
   display: none; 
@@ -322,11 +350,15 @@ h2, p {
 
 .modal--rules .modal-content {
   
-  margin: 15% auto; 
+ 
   padding: 20px;
   
   width: 80%;
   
+}
+
+.modal-content span{
+  margin: 1%;
 }
 
 .modal--rules .close {
@@ -336,11 +368,24 @@ h2, p {
   font-weight: bold;
 }
 
+.modal--rules .modal-content h2 {
+margin: 10%;
+font-size: 1.5em;
+}
+
+.modal--rules .modal-content .button--style {
+ width: auto;
+  }
+
 .modal--rules .close:hover,
 .modal--rules .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.green {
+  background-color: #58ea00;
 }
 
 .victory--person {
@@ -371,9 +416,50 @@ h2, p {
   }
 }
 
+.publicita {
+  height:25vh;
+  width: 100%;
+}
+
+.publicita .svit img {
+  animation: wiggle 5s linear infinite;
+}
+
+/* Keyframes */
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
+.publicita img {
+  height: 25vh;
+  width: 100%;
+  animation: none ;
+}
+
 /* (A) WRONG ORIENTATION - SHOW MESSAGE HIDE CONTENT */
 @media only screen and (orientation:portrait) {
-  .otoc { display:block; }
+  .otoc { display:block;
+  z-index: 100000; }
   .screen { display:none; }
 }
  

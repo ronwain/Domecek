@@ -97,7 +97,11 @@ cursor: pointer;
 }
 
 #img-kocka {
-  background-image: url(img/);
+  background-image: url(img/hrozby/kocka.svg);
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }
 
 #img-pc {
