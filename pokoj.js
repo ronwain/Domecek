@@ -146,7 +146,7 @@ function clickME(event) {
 
   console.log(clicks)
 
-  if(clicks == 5) {
+  if(clicks == 6) {
    document.getElementById('gohome').style.display = 'block'; 
    document.getElementById('zmiz').style.display = 'none';
    document.getElementById('po-hint').style.display = 'none';

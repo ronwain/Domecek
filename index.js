@@ -57,7 +57,7 @@ if(sessionStorage.getItem("koupelna") === null){
    ukaz.classList.remove("nesvit")
 }
 
-/*
+
 if (sessionStorage.getItem("dilna") && sessionStorage.getItem("puda") && sessionStorage.getItem("loznice") && sessionStorage.getItem("obyvak") && sessionStorage.getItem("okoli") && sessionStorage.getItem("pokoj") && sessionStorage.getItem("kuchyne")  && sessionStorage.getItem("koupelna")) {
     console.log("prasarna");
     var modalHintLoz = document.getElementById('obyvak-hint-modal');
@@ -67,16 +67,7 @@ if (sessionStorage.getItem("dilna") && sessionStorage.getItem("puda") && session
 
 
 } 
-*/
-if (sessionStorage.getItem("dilna")) {
-   console.log("prasarna");
-   var modalHintLoz = document.getElementById('obyvak-hint-modal');
-   var firework = document.getElementById('fire');
-   modalHintLoz.style.display = "block";
-   firework.style.display = "block";
 
-
-} 
 
 
 // Rules modal
