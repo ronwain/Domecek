@@ -66,9 +66,7 @@ if (sessionStorage.getItem("dilna") && sessionStorage.getItem("puda") && session
     firework.style.display = "block";
 
 
-} else {
-    console.log("nope")
-}
+} 
 
 
 // Rules modal
