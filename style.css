@@ -492,7 +492,7 @@ align-items: center;
   }
 
   .home--star{
-    width: 20vw;
+    width: 25vw;
   }
 
   .star--place {
@@ -527,7 +527,7 @@ align-items: center;
       height: 32px;
     }
     .home--star{
-      width: 20vw;
+      width: 25vw;
     }
 
     .star--place {
@@ -571,7 +571,7 @@ align-items: center;
         height: 32px;
       }
       .home--star{
-        width: 20vw;
+        width: 25vw;
       }
   
       .star--place {
@@ -621,7 +621,7 @@ align-items: center;
           height: 32px;
         }
         .home--star{
-          width: 20vw;
+          width: 25vw;
         }
     
         .star--place {
